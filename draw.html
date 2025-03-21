@@ -46,7 +46,7 @@
             fetch(shaderFile)
                 .then(response => {
                     if (!response.ok) {
-                        const likely_path = `/shaders/${shaderFile}`
+                        const likely_path = `shaders/${shaderFile}`
                         console.log(`First attempt failed: ${shaderFile}, trying modified path: ${likely_path}`);
                         return fetch(likely_path);
                     }
